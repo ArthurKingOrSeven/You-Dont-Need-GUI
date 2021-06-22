@@ -54,11 +54,11 @@ It's for noobs :)
 1. [我不记得这些神秘命令](#i-cant-remember-these-cryptic-commands)
 
 
-## 复制文件
+## copy a file
 
-**STOP DRAG AND DROPPING A FILE, OR CMD/CTRL + C, CMD/CTRL + V A FILE** :-1:
+**停止拖放文件，或 CMD/CTRL + C、CMD/CTRL + VA 文件** :-1:
 
-Copy `readme.txt` to the `documents` directory
+复制 `readme.txt` 到 `documents` 目录
 
 ```shell
 $ cp readme.txt documents/
@@ -66,22 +66,22 @@ $ cp readme.txt documents/
 
 ## duplicate a file
 
-**STOP RIGHT CLICKING AND DUPLICATE A FILE** :-1:
+**停止右键单击并复制文件** :-1:
 
 ```shell
 $ cp readme.txt readme.bak.txt
 ```
-More advanced:
+更先进:
 ```shell
 $ cp readme{,.bak}.txt
-# Note: learn how the {} works with touch foo{1,2,3}.txt and see what happens.
+#注意：了解 {} 如何与 touch foo{1,2,3}.txt 一起执行，看看会发生什么。
 ```
 
 ## copy a directory
 
-**STOP DRAG AND DROPPING A DIRECTORY, OR CMD/CTRL + C, CMD/CTRL + V A DIRECTORY** :-1:
+**停止拖放目录，或 CMD/CTRL + C、CMD/CTRL + VA 目录** :-1:
 
-Copy `myMusic` directory to the `myMedia` directory
+复制 `myMusic` 目录到 `myMedia` 目录
 
 ```shell
 $ cp -a myMusic myMedia/
@@ -91,27 +91,27 @@ $ cp -a myMusic/ myMedia/myMusic/
 
 ## duplicate a directory
 
-**STOP RIGHT CLICKING AND DUPLICATE A DIRECTORY** :-1:
+**停止右键单击并复制目录** :-1:
 
 ```shell
 $ cp -a myMusic/ myMedia/
-# or if `myMedia` folder doesn't exist
+# 或者如果 `myMedia` 文件夹不存在
 $ cp -a myMusic myMedia/
 ```
 
 ## move a file
 
-**STOP DRAG AND DROPPING A FILE, OR CMD/CTRL + X, CMD/CTRL + V A FILE** :-1:
+**停止拖放文件，或 CMD/CTRL + X、CMD/CTRL + VA 文件** :-1:
 
 ```shell
 $ mv readme.txt documents/
 ```
 
-**Always** use a trailing slash when moving files, [for this reason](http://unix.stackexchange.com/a/50533).
+**出于这个原因** 移动文件时始终使用尾部斜杠, [for this reason](http://unix.stackexchange.com/a/50533).
 
 ## rename a file
 
-**STOP RIGHT CLICKING AND RENAME A FILE** :-1:
+**停止右键单击并重命名文件** :-1:
 
 ```shell
 $ mv readme.txt README.md
@@ -119,7 +119,7 @@ $ mv readme.txt README.md
 
 ## move a directory
 
-**STOP DRAG AND DROPPING A DIRECTORY, OR CMD/CTRL + X, CMD/CTRL + V A DIRECTORY** :-1:
+**停止拖放目录，或 CMD/CTRL + X、CMD/CTRL + VA 目录** :-1:
 
 ```shell
 $ mv myMedia myMusic/
@@ -129,7 +129,7 @@ $ mv myMedia/ myMusic/myMedia
 
 ## rename a directory
 
-**STOP RIGHT CLICKING AND RENAME A DIRECTORY** :-1:
+**停止右键单击并重命名目录** :-1:
 
 ```shell
 $ mv myMedia/ myMusic/
@@ -137,25 +137,25 @@ $ mv myMedia/ myMusic/
 
 ## merge directories
 
-**STOP DRAG AND DROPPING TO MERGE DIRECTORIES** :-1:
+**停止拖放合并目录** :-1:
 
 ```shell
-$ rsync -a /images/ /images2/	# note: may over-write files with the same name, so be careful!
+$ rsync -a /images/ /images2/	# 注意：可能会覆盖同名文件，所以要小心！
 ```
 
 ## create a new file
 
-**STOP RIGHT CLICKING AND CREATE A NEW FILE** :-1:
+**停止右键单击并创建新文件** :-1:
 
 ```shell
-$ touch 'new file'    # updates the file's access and modification timestamp if it already exists
+$ touch 'new file'    # 如果文件已经存在，则更新文件的访问和修改时间戳
 # or
-$ > 'new file'        # note: erases the content if it already exists
+$ > 'new file'        # 注意：如果内容已经存在，则擦除内容
 ```
 
 ## create a new directory
 
-**STOP RIGHT CLICKING AND CREATE A NEW DIRECTORY** :-1:
+**停止右键单击并创建新目录** :-1:
 
 ```shell
 $ mkdir 'untitled folder'
@@ -165,7 +165,7 @@ $ mkdir -p 'path/may/not/exist/untitled\ folder'
 
 ## show file/directory size
 
-**STOP RIGHT CLICKING AND SHOW FILE/directory INFO** :-1:
+**停止右键单击并显示文件/目录信息** :-1:
 
 ```shell
 $ du -sh node_modules/
@@ -173,7 +173,7 @@ $ du -sh node_modules/
 
 ## show file/directory info
 
-**STOP RIGHT CLICKING AND SHOW FILE/DIRECTORY INFO** :-1:
+**停止右键单击并显示文件/目录信息** :-1:
 
 ```shell
 $ stat -x readme.md   # on macOS
@@ -182,7 +182,7 @@ $ stat readme.md      # on Linux
 
 ## open a file with the default program
 
-**STOP DOUBLE CLICKING ON A FILE** :-1:
+**停止双击文件** :-1:
 
 ```shell
 $ xdg-open file   # on Linux
@@ -191,7 +191,7 @@ $ open file       # on MacOS
 
 ## zip a directory
 
-**STOP RIGHT CLICKING AND COMPRESS DIRECTORY** :-1:
+**停止右键单击并压缩目录** :-1:
 
 ```shell
 $ zip -r archive_name.zip folder_to_compress
@@ -199,7 +199,7 @@ $ zip -r archive_name.zip folder_to_compress
 
 ## unzip a directory
 
-**STOP RIGHT CLICKING AND UNCOMPRESS DIRECTORY** :-1:
+**停止右键单击并解压缩目录** :-1:
 
 ```shell
 $ unzip archive_name.zip
@@ -207,7 +207,7 @@ $ unzip archive_name.zip
 
 ## peek files in a zip file
 
-**STOP USING WinRAR** :-1:
+**停止使用 WinRAR** :-1:
 
 ```shell
 $ zipinfo archive_name.zip
@@ -217,17 +217,17 @@ $ unzip -l archive_name.zip
 
 ## remove a file
 
-**STOP RIGHT CLICKING AND DELETE A FILE PERMANENTLY** :-1:
+**停止右键单击并永久删除文件** :-1:
 
 ```shell
 $ rm my_useless_file
 ```
 
-IMPORTANT: The rm command deletes my_useless_file permanently, which is equivalent to move my_useless_file to Recycle Bin and hit Empty Recycle Bin.
+重要： rm 命令永久删除 my_useless_file，这相当于将 my_useless_file 移动到回收站并点击清空回收站。
 
 ## remove a directory
 
-**STOP RIGHT CLICKING AND DELETE A DIRECTORY PERMANENTLY** :-1:
+**停止右键单击并永久删除目录** :-1:
 
 ```shell
 $ rm -r my_useless_folder
@@ -235,30 +235,30 @@ $ rm -r my_useless_folder
 
 ## list directory contents
 
-**STOP OPENING YOUR FINDER OR FILE EXPLORER** :-1:
+**停止打开您的查找器或文件浏览器** :-1:
 
 ```shell
 $ ls my_folder        # Simple
-$ ls -la my_folder    # -l: show in list format. -a: show all files, including hidden. -la combines those options.
-$ ls -alrth my_folder # -r: reverse output. -t: sort by time (modified). -h: output human-readable sizes.
+$ ls -la my_folder    # -l: 以列表格式显示。-a：显示所有文件，包括隐藏文件。-la 结合了这些选项.
+$ ls -alrth my_folder # -r: 反向输出。-t：按时间排序（修改）。-h：输出人类可读的大小.
 ```
 
 ## tree view a directory and its subdirectories
 
-**STOP OPENING YOUR FINDER OR FILE EXPLORER** :-1:
+**停止打开您的查找器或文件浏览器** :-1:
 
 ```shell
 $ tree                                                        # on Linux
 $ find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'      # on MacOS
-# Note: install homebrew (https://brew.sh) to be able to use (some) Linux utilities such as tree.
-# brew install tree
+# 注意：安装 homebrew (https://brew.sh) 以便能够使用（某些）Linux 实用程序，例如 tree。
+# brew 安装树
 ```
 
 ## find a stale file
 
-**STOP USING YOUR FILE EXPLORER TO FIND A FILE** :-1:
+**停止使用您的文件浏览器查找文件** :-1:
 
-Find all files modified more than 5 days ago
+查找 5 天前修改的所有文件
 
 ```shell
 $ find my_folder -mtime +5
@@ -266,14 +266,15 @@ $ find my_folder -mtime +5
 
 ## show a calendar
 
-**STOP LOOKING UP WHAT THIS MONTH LOOKS LIKE BY CALENDAR WIDGETS** :-1:
+**停止通过日历小部件查看本月的样子** :-1:
 
-Display a text calendar
+显示文本日历
 
 ```shell
 $ cal
 ```
-Display selected month and year calendar
+
+显示选定的月历和年历
 
 ```shell
 $ cal 11 2018
@@ -281,15 +282,15 @@ $ cal 11 2018
 
 ## find a future date
 
-**STOP USING WEBAPPS TO CALCULATE FUTURE DATES** :-1:
+**停止使用网络应用程序计算未来日期** :-1:
 
-What is todays date?
+今天几号？
 
 ```shell
 $ date +%m/%d/%Y
 ```
 
-What about a week from now?
+一周后呢？
 
 ```shell
 $ date -d "+7 days"                                           # on Linux
@@ -298,7 +299,7 @@ $ date -j -v+7d                                               # on MacOS
 
 ## use a calculator
 
-**STOP USING CALCULATOR WIDGET** :-1:
+**停止使用计算器小部件** :-1:
 
 ```shell
 $ bc
@@ -306,7 +307,7 @@ $ bc
 
 ## force quit a program
 
-**STOP CTRL + ALT + DELETE and choose the program to kill** :-1:
+**停止 CTRL + ALT + DELETE 并选择要杀死的程序** :-1:
 
 ```shell
 $ killall program_name
@@ -314,26 +315,26 @@ $ killall program_name
 
 ## check server response
 
-**STOP OPENING A BROWSER** :-1:
+**停止打开浏览器** :-1:
 
 ```shell
 curl -i umair.surge.sh
-# curl's -i (--include) option includes HTTP response headers in its output.
+#  curl 的 -i (--include) 选项在其输出中包含 HTTP 响应标头。
 ```
 
 ## view content of a file
 
-**STOP DOUBLE CLICKING A FILE** :-1:
+**停止双击文件** :-1:
 
 ```shell
 $ cat apps/settings.py
-# if the file is too big to fit on one page, you can use a 'pager' (less) which shows you one page at a time.
+# 如果文件太大而无法放在一页上，您可以使用“pager”（较少）一次显示一页。
 $ less apps/settings.py
 ```
 
 ## search for a text
 
-**STOP CMD/CTRL + F IN A DIRECTORY** :-1:
+**在目录中停止 CMD/CTRL + F** :-1:
 
 ```shell
 $ grep -i "Query" file.txt
@@ -343,16 +344,16 @@ $ grep -i "Query" file.txt
 
 ## view an image
 
-**STOP USING PREVIEW** :-1:
+**停止使用预览** :-1:
 
 ```shell
 $ imgcat image.png
-# Note: requires iTerm2 terminal.
+# 注意：需要 iTerm2 终端.
 ```
 
 ## show disk size
 
-**STOP RIGHT CLICKING DISK ICON OR OPENING DISK UTILITY** :-1:
+**停止右键单击磁盘图标或打开磁盘实用程序** :-1:
 
 ```shell
 $ df -h
@@ -360,7 +361,7 @@ $ df -h
 
 ## check performance of your computer
 
-**STOP OPENING YOUR ACTIVITY MONITOR OR TASK MANAGER** :-1:
+**停止打开您的活动监视器或任务管理器** :-1:
 
 ```shell
 $ top
@@ -373,24 +374,24 @@ $ top
 ## Hotkeys
 
 ```
-Ctrl + A  Go to the beginning of the line you are currently typing on
-Ctrl + E  Go to the end of the line you are currently typing on
-Ctrl + L  Clears the Screen, similar to the clear command
-Ctrl + U  Clears the line before the cursor position. If you are at the end of the line, clears the entire line.
-Ctrl + H  Same as backspace
-Ctrl + R  Lets you search through previously used commands
-Ctrl + C  Kill whatever you are running
-Ctrl + D  Exit the current shell
-Ctrl + Z  Puts whatever you are running into a suspended background process. fg restores it.
-Ctrl + W  Delete the word before the cursor
-Ctrl + K  Clear the line after the cursor
-Ctrl + T  Swap the last two characters before the cursor
-Esc + T   Swap the last two words before the cursor
-Alt + F   Move cursor forward one word on the current line
-Alt + B   Move cursor backward one word on the current line
-Tab       Auto-complete files and directory names
+Ctrl + A 转到您当前正在键入的行的开头
+Ctrl + E 转到您当前正在输入的行的末尾
+Ctrl + L 清除屏幕，类似于 clear 命令
+Ctrl + U 清除光标位置之前的行。 如果您在行尾，则清除整行。
+Ctrl + H 与退格键相同
+Ctrl + R 让您搜索以前使用过的命令
+Ctrl + C 杀死正在运行的任何东西
+Ctrl + D 退出当前shell
+Ctrl + Z 将您正在运行的任何内容放入暂停的后台进程。 fg 恢复它。
+Ctrl + W 删除光标前的单词
+Ctrl + K 清除光标后的行
+Ctrl + T 交换光标前的最后两个字符
+Esc + T 交换光标前的最后两个单词
+Alt + F 在当前行将光标向前移动一个词
+Alt + B 在当前行将光标向后移动一个词
+Tab 自动完成文件和目录名称
 ```
 
 ## I can't remember these cryptic commands
 
-You can always google or `man` the commands you are not familiar with. Or, checkout [tldr](https://github.com/tldr-pages/tldr), a collection of simplified and community-driven man pages.
+您可以随时 google 或man您不熟悉的命令。或者, checkout [tldr](https://github.com/tldr-pages/tldr), 一组简化的和社区驱动的手册页。

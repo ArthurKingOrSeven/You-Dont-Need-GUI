@@ -1,5 +1,5 @@
 
-[中文版入口](README_cn.md)
+[中文版入口](readme_cn.md)
 
 # You Don't Need GUI
 

@@ -2,9 +2,9 @@
 
 [![加入 Spectrum 社区](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/you-dont-need/GUI)
 
-<详情>
-这是给菜鸟的 :)
-</详情>
+<details>
+It's for noobs :)
+</details>
 <br />
 
 图形用户界面对计算机用户非常友好。引入它们是为了应对命令行界面 (CLI) 的陡峭学习曲线。
@@ -15,7 +15,7 @@
 
 作为计算机专家，我们希望提高效率并更好地完成工作。我们知道命令词可能不容易被发现或助记，因此我们尝试列出一些您可能想在 GUI 中执行的常见任务。
 
-＃＃ 快速链接
+## 快速链接
 
 1. [复制文件](#copy-a-file)
 1. [复制文件](#duplicate-a-file)
@@ -54,7 +54,7 @@
 1. [我不记得这些神秘命令](#i-cant-remember-these-cryptic-commands)
 
 
-## copy a file
+## 复制文件
 
 **STOP DRAG AND DROPPING A FILE, OR CMD/CTRL + C, CMD/CTRL + V A FILE** :-1:
 
